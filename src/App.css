@@ -1,0 +1,107 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+/*  css variables */
+:root {
+  --card-bg-01: #fdefe6;
+  --card-bg-02: #d6e5fb;
+  --card-bg-03: #ceebe9;
+  --card-bg-04: #e2f2b2;
+  --primary-color: #0a1d37;
+  --hero-bg: #d6e5fb;
+  --heading-fontSize: 2rem;
+  --small-text-color: #999;
+  --heading-text-color: #0a1d37;
+  --font-bold: 700;
+}
+
+/* reset browser default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  color: var(--small-text-color);
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  font-size: var(--heading-fontSize);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+img {
+  width: 100%;
+}
+
+section {
+  padding: 60px 0px;
+}
+.section__title {
+  color: var(--primary-color);
+  font-weight: var(--font-bold);
+}
+.paginationBttns {
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.5rem;
+  list-style: none;
+  margin-top: 30px;
+}
+.paginationBttns a {
+  padding: 5px 13px;
+  background-color: var(--primary-color);
+  color: #fff !important;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 5px;
+  transition: 0.3s;
+}
+.paginationBttns a:hover {
+  background-color: #0a1d37cc;
+}
+.paginationBttns .previous.disabled,
+.paginationBttns .next.disabled {
+  display: none;
+}
+.Toastify__toast-container--top-right {
+  top: 5.2em !important;
+}
+@media screen and (max-width: 667px) {
+  section {
+    padding: 30px 0px;
+  }
+}
